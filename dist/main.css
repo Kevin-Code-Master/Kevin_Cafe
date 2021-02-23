@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body{
+      margin:0;
+      padding: 0;
+      background-image: url("../assets/favicon.jpg");
+      background-position: center;
+      background-size: 500px 400px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: rgb(253, 249, 249);
+  }
+  #content{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color:rgba(201, 201, 201, 0.9);
+      display: flex;
+      flex-direction: column;
+  }
+  #header{
+      width: inherit;
+      position: sticky;
+      height:80px;
+      background-color: rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      color: white;
+  }
+  .logo{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 20px;
+      box-shadow: 1px 2px 5px 1px rgb(78, 63, 63);
+      animation-name: blink;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+  }
+  @keyframes blink{
+    0%{
+        transform: rotateY(0);
+    }
+    50%{
+        transform: rotateY(60deg);
+        
+    }
+    100%{
+        transform: rotateY(0);
+    }
+  }
+  /* navbar */
+  #navBar{
+      width: 100%;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+      background-color:rgb(103, 179, 179);
+  }
+  /* create buttons */
+  .btns{
+      width: 200px;
+      height: 40px;
+      background-color:transparent;
+      cursor: pointer;
+      outline:none;
+      border: 1px outset white;
+      border-radius:5px;
+      box-shadow: 1px 2px 5px 1px rgb(78, 63, 63);
+      margin: 0 5px;
+      color:white;
+  }
+  .btns:hover{
+    border:1px inset white;
+    background-color:teal;
+    color: violet;
+    box-shadow:inset 1px 2px 5px 1px rgb(78, 63, 63);
+    transition: 0.5s;
+  }
+  /* btns clicked:Active */
+  .btnsActive{
+    border:1px inset white;
+    background-color:teal;
+    color: violet;
+    box-shadow:inset 1px 2px 5px 1px rgb(78, 63, 63);
+  }
+ .btnText{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ .tabContentContainer{
+     width: 100%;
+     height: 500px;
+     display: none;
+     background-color: black;
+ }
+ .drinksContainer{
+    width: 100%;
+    height: 500px;
+    display: none;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+ }
+ .coffee{
+     width: 50%;
+     height: 470px;
+     background-image: url("../assets/coffee.jpg");
+     background-position: center;
+     background-size: cover;
+     /* box-shadow:inset 1px 2px 5px 1px rgb(78, 63, 63); */
+     /* border-radius: 15px; */
+     display: flex;
+     /* margin: 20px; */
+ }
+ .alcoholics{
+    width: 45%;
+    height: 470px;
+    border:1px solid white;
+    background-image: url("../assets/alc.jpg");
+    background-position: center;
+    background-size: cover;
+    /* box-shadow:inset 1px 2px 5px 1px rgb(78, 63, 63); */
+    border-radius: 15px; 
+    background-repeat: no-repeat;
+    float: right;
+    margin: 20px;
+}
+.mealsContainer{
+    width: 100%;
+    height: 500px;
+    display: none;
+    background-color:grey;
+    display: flex;
+    flex-direction: row;
+ }
+ .mealsMenu{
+    width: 50%;
+    height: 470px;
+    background-image: url("../assets/meals.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 1px 2px 5px 1px rgb(78, 63, 63);
+    display: flex;
+}
+.menu{
+    width: 50%;
+    height: 470px;
+    background-image: url("../assets/foodmenu.jpg");
+    background-position: center;
+    background-size: 100% 525px;
+    background-repeat: no-repeat;
+    box-shadow:inset 1px 2px 5px 1px rgb(78, 63, 63);
+}
+ .about{
+     width: 100%;
+     height: 60px;
+     background-color:rgb(57, 71, 67);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: white;
+ }
+ .paraContent{
+    width: 80%;
+    margin: auto;
+    height: 465px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    justify-content:center;
+    align-items: center;
+ }
+ /* footer section */
+ .footer{
+     position: fixed;
+     top: 605px;
+     width: 100%;
+     height: 60px;
+     background-color:rgb(57, 71, 67);
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     font-size: 20px;
+     color:white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding-right: 15px;
+ }
